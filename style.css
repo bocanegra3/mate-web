@@ -1,0 +1,66 @@
+body{
+    position: relative;
+    padding-bottom: 5rem;
+}
+#tipografia{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    display:flexbox;
+    margin: 0 10px;
+    text-align: right;
+}
+#tipografia:hover{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    display:flexbox;
+    margin: 0 10px;
+    text-align: right;
+    color: yellowgreen;
+}
+.autor{
+    text-align: right;
+    margin: 3rem;
+}
+
+div h4{
+    font-family: 'Oswald', sans-serif;
+}
+h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+#texto{
+    margin-top: 5rem;
+}
+figcaption{
+    padding-bottom: 1rem;
+}
+
+#footer{
+    text-align: center;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    left:0px; /*A la derecha deje un espacio de 0px*/
+    right:0px; /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px; /*Abajo deje un espacio de 0px*/
+    height: 50px; /*alto del div*/
+    z-index:0;
+    
+    color: white;
+    background:rgb(14, 138, 82);
+    
+}
+#footer:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    left:0px; /*A la derecha deje un espacio de 0px*/
+    right:0px; /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px; /*Abajo deje un espacio de 0px*/
+    height: 50px; /*alto del div*/
+    z-index:0;
+    
+    color: yellowgreen;
+    background:rgb(14, 138, 82);
+    
+}
