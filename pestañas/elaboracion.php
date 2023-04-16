@@ -35,6 +35,8 @@
                 <a class="nav-link link-success" href="./origen.php"> Origen </a>
                 <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
                 <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
+                <a class="nav-link link-success" href="./productos.php"> Productos</a>
+                <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
             </nav>
     </div>
     <div class="container-md">

@@ -25,7 +25,7 @@
     <div class="head">
         <nav class="navbar navbar-dark bg-success">
             <div class="container-fluid">
-                <a class="navbar-brand" id="tipografia" href="./index.php">
+                <a class="navbar-brand " id="tipografia" href="./index.php">
                     <img src="./img/1f9c9.png" alt="" width="30" height="24">
                     MATE WEB</a>
             </div>
@@ -35,6 +35,8 @@
             <a class="nav-link link-success" href="pestañas/origen.php"> Origen </a>
             <a class="nav-link link-success" href="pestañas/elaboracion.php"> Elaboracion </a>
             <a class="nav-link link-success" href="pestañas/ilustraciones_mate.php"> Ilustraciones</a>
+            <a class="nav-link link-success" href="pestañas/productos.php"> Productos</a>
+            <a class="nav-link link-success" href="pestañas/contacto.php"> Contacto</a>
         </nav>
     </div>
     <div class="container-md">

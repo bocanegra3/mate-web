@@ -23,37 +23,59 @@
 <body>
 
     <div class="head">
-        <nav class="navbar navbar-dark bg-success">
+    <nav class="navbar navbar-dark bg-success">
             <div class="container-fluid">
                 <a class="navbar-brand" id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
                     MATE WEB</a>
             </div>
         </nav>
-        <nav class="nav nav-pills nav-fill">
-            <a class="nav-link link-success" href="./mate.php">Mate </a>
-            <a class="nav-link link-success" href="./origen.php"> Origen </a>
-            <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
-            <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
-            <a class="nav-link link-success" href="./productos.php"> Productos</a>
-            <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
-        </nav>
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-link link-success" href="./mate.php">Mate </a>
+                <a class="nav-link link-success" href="./origen.php"> Origen </a>
+                <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
+                <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
+                <a class="nav-link link-success" href="./productos.php"> Productos</a>
+                <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
+            </nav>
     </div>
+<section class="">
 
-    <h3 class="autor" ;>Fotografias</h3>
-    <div id="imagenes">
-   
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto1.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto2.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto3.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/gauchos-mate.jpg" alt="Gauchos tomando Mate.">
+    <form action="enviar_consulta.php" method="post">
+    <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control " name="nombre" placeholder="Nombre" required>
+
     </div>
-        <div class="text-center">
-            <p id="texto" class="lead">
-            </p>
-            <figcaption class="blockquote-footer">Fotografias extraidas de la web.</figcaption>
+    <div class="col-md-4 mb-3">
+      <label for="apellido">Apellido</label>
+      <input type="text" class="form-control" name="apellido" placeholder="Apellido" required>
+
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="email">Email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
         </div>
+        <input type="text" class="form-control" name="email"  placeholder="Coloque aqui su Mail" aria-describedby="inputGroupPrepend3" required>
 
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="mensaje">Coloque aqui su mensaje</label>
+    <textarea class="form-control" name="mensaje" placeholder="Escriba su consulta/mensaje" rows="3"></textarea>
+  </div>
+        <input type="submit" value="Enviar Formulario">
+    </form>
+</section>
+<?php if(isset($_GET['ok'])){
+    echo "<h3> Su mensaje a sido enviado con exito! </h3><br>";
+    }
+    ?>
+    
     <footer class="text-center">
 
         <div>

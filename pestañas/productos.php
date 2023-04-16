@@ -25,7 +25,7 @@
     <div class="head">
         <nav class="navbar navbar-dark bg-success">
             <div class="container-fluid">
-                <a class="navbar-brand" id="tipografia" href="../index.php">
+                <a class="navbar-brand " id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
                     MATE WEB</a>
             </div>
@@ -39,21 +39,46 @@
             <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
         </nav>
     </div>
+    <div class="main-content">
+        <h2>Venta de productos</h2>
+<ul class="gallery">
+<?php
+  include_once ("datos_productos.php");
+  include_once ("db.php");
 
-    <h3 class="autor" ;>Fotografias</h3>
-    <div id="imagenes">
-   
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto1.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto2.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/foto3.jpg" alt="Mate.">
-        <img class="rounded mx-auto d-block img-fluid" src="../img/gauchos-mate.jpg" alt="Gauchos tomando Mate.">
-    </div>
-        <div class="text-center">
-            <p id="texto" class="lead">
-            </p>
-            <figcaption class="blockquote-footer">Fotografias extraidas de la web.</figcaption>
+  $link= new db();
+  $sql= "SELECT producto, precio, imagen from producto order by precio ASC;";
+  $stmt = $link->prepare($sql);
+  $stmt->execute();
+  $data=$stmt->fetchAll();
+
+  foreach($data as $row)
+  {
+    ?>
+    <li>
+        <div class="box">
+          <figure>
+            <img src="<?php echo $row['imagen']?>"/>
+            <figcaption>
+              <h3><?php echo $row['producto']?></h3>            
+              <p>
+                $<?php echo $row['precio']?>
+              </p>
+          
+            </figcaption>
+          </figure>
+          <button class="button" value="1">
+            Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+          </button>
         </div>
+      </li>
+      <?php
+  }
+  ?>
 
+</ul>
+          
+    </div>
     <footer class="text-center">
 
         <div>

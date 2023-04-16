@@ -33,49 +33,68 @@
                     MATE WEB</a>
             </div>
         </nav>
-            <nav class="nav nav-pills nav-fill">
+            <nav class="nav nav-pills nav-fill ">
                 <a class="nav-link link-success" href="./mate.php">Mate </a>
                 <a class="nav-link link-success" href="./origen.php"> Origen </a>
                 <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
                 <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
+                <a class="nav-link link-success" href="./productos.php"> Productos</a>
+                <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
             </nav>
     </div>
-    <div class="container-md">
+    <section class="container-md text-center">
+    <div><h2>tipos de mates</h4></div>     
+    <ul class='nav nav-tabs light'>
+        <li class="nav-item"><a class="nav-link link-secondary" href="mate.php?tipo=ma"> Mate amargo</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary" href="mate.php?tipo=md"> Mate dulce</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary" href="mate.php?tipo=mdl"> Mate de leche</a></li>
+        <li class="nav-item"><a class="nav-link link-secondary" href="mate.php?tipo=mt"> Mate terere</a></li>
+    </ul>  
+    </section>
+    <?php 
+    $tipodemate="Tradición del mate";
+    $caracteristicas="Representa la unión y el compartir, ayuda a socializar, facilita la generación de vínculos, alarga la charla o la promueve, acorta distancias, ayuda a intimar, distiende, informaliza. Funciona como una excusa para el encuentro: “Es típico que uno diga ¿te venís a tomar unos mates?”.";
+    $img="../img/mate-1.jpg";
+    if(isset($_GET['tipo'])){
+        switch($_GET['tipo']){
+            case "ma";
+            $tipodemate = "El Clasico mate amargo";
+            $caracteristicas= "En algunas partes del Cono Sur se prefiere beber mate amargo, especialmente en Paraguay, Uruguay, sur de Brasil, Argentina y Bolivia (departamento de Tarija y el Gran Chaco). Es la forma más habitual de tomar mate. También se lo conoce como cimarrón (chimarrão, en Brasil)";
+            $img = "../img/mate-amargo.jpg";
+            break;
+            case "md";
+            $tipodemate = "El mate dulce";
+            $caracteristicas= "La diferencia con el mate amargo consiste en que en cada cebada se incorpora azúcar a gusto del bebedor. Esta forma de preparación es muy difundida pocas regiones de Bolivia en el Chaco de Santa Cruz, en Chuquisaca y en el departamento de Tarija, En Argentina, como en la provincia de Santiago del Estero, Córdoba (Argentina), Cuyo, Región metropolitana de Buenos Aires, entre otros. En Chile, esta forma de preparación del mate está difundida mayoritariamente en zonas rurales. La cucharadita de azúcar o miel debe caer al borde de la zanja que forma la bombilla en la yerba, no por todo el mate. Una variante es endulzar solo el primer mate para cortar el amargor del primero, suavizando así los posteriores.";
+            $img = "../img/mate-dulce.jpg";
+            break;
+            case "mdl";
+            $tipodemate = "El mate de leche";
+            $caracteristicas= "La diferencia con el mate amargo es que en lugar de cebar con agua, se lo hace con leche y azúcar. Esta variante tiene la desventaja de no poder limpiar fácilmente la bombilla y el mate, por eso suelen utilizarse unos distintos a los de las variantes tradicionales. En el Paraguay, también se acostumbra a cebar lo que allí se denomina «mate dulce», que se prepara con leche caliente endulzada (o con azúcar dorada), cambiando la yerba por coco rallado, o poniendo primeramente yerba y sobre ella coco rallado.";
+            $img = "../img/mate-leche.jpg";
+            break;
+            case "mt";
+            $tipodemate = "El mate terere el preferido del verano";
+            $caracteristicas= "El tereré (palabra de origen guaraní)79 es una bebida tradicional, de amplio consumo en Paraguay y algunas provincias argentinas (las del nordeste y Entre Ríos)
 
-        <h3 class="autor" ;>Existen distintos tipos de mates</h3>
-        <h4>El clasico Mate amargo</h4>
-        <img class="rounded mx-auto d-block" src="../img/mate-amargo.jpg" alt="mate amargo imagen.">
+            Es tradicional de Paraguay donde es considerado un icono cultural y declarado como patrimonio cultural inmaterial de la humanidad por la Unesco.80​
+
+            Una forma de tereré, consistente en una mezcla de agua bien fría con yerba mate, remedios refrescantes naturales (hierbas medicinales) y hielo. Como hierbas suelen emplearse la menta (Mentha arvensis), la menta peperina, el cedrón (Aloysia triphylla), burrito, el kokú (Allophylus edulis), la cola de caballo o las cáscaras de limón.
+
+            La otra forma de tereré consiste en poner en un recipiente de metal tres dedos de altura de yerba mate y hielo. Preparar en una jarra o termo jugo de diversos sabores naranja, lima, limón con abundante hielo y cebarlo.
+
+            La yerba mate es puesta en maceración en agua fría y proporciona una bebida agradable por su efecto refrescante, especialmente en jornadas con altas temperaturas, evitando así los inconvenientes del mate hervido (cocido). Esta modalidad es también utilizada en la región pampeana de Argentina.";
+            $img = "../img/mate-terere.jpg";
+            break;
+        }
+    }
+    ?>
         <div class="text-center">
-            <p id="texto" class="lead"><br>En algunas partes del Cono Sur se prefiere beber mate amargo, especialmente en Paraguay, Uruguay, sur de Brasil, Argentina y Bolivia (departamento de Tarija y el Gran Chaco). Es la forma más habitual de tomar mate. También se lo conoce como cimarrón (chimarrão, en Brasil).</p>
-            <figcaption class="blockquote-footer">https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)#Mate_amargo</figcaption>
+            <h4><?php echo $tipodemate ?></h4>
+            <div>
+        <img class="rounded mx-auto d-block" src="<?php echo $img ?>" alt=""> 
+            </div>
+            <p id="texto" class="lead"><?php echo $caracteristicas ?></p>            
         </div>
-        <h4>El Mate Dulce</h4>
-        <img class="rounded mx-auto d-block" src="../img/mate-dulce.jpg" alt="mate dulce imagen.">
-        <div class="text-center">
-            <p id="texto" class="lead"><br>La diferencia con el mate amargo consiste en que en cada cebada se incorpora azúcar a gusto del bebedor. Esta forma de preparación es muy difundida pocas regiones de Bolivia en el Chaco de Santa Cruz, en Chuquisaca y en el departamento de Tarija, En Argentina, como en la provincia de Santiago del Estero, Córdoba (Argentina), Cuyo, Región metropolitana de Buenos Aires, entre otros. En Chile, esta forma de preparación del mate está difundida mayoritariamente en zonas rurales. La cucharadita de azúcar o miel debe caer al borde de la zanja que forma la bombilla en la yerba, no por todo el mate. Una variante es endulzar solo el primer mate para cortar el amargor del primero, suavizando así los posteriores.</p>
-            <figcaption class="blockquote-footer">https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)#Mate_dulce</figcaption>
-        </div>
-        <h4>El Mate de leche</h4>
-        <img class="rounded mx-auto d-block" src="../img/mate-leche.jpg" alt="mate de leche imagen.">
-        <div class="text-center">
-            <p id="texto" class="lead"><br>La diferencia con el mate amargo es que en lugar de cebar con agua, se lo hace con leche y azúcar. Esta variante tiene la desventaja de no poder limpiar fácilmente la bombilla y el mate, por eso suelen utilizarse unos distintos a los de las variantes tradicionales. En el Paraguay, también se acostumbra a cebar lo que allí se denomina «mate dulce», que se prepara con leche caliente endulzada (o con azúcar dorada), cambiando la yerba por coco rallado, o poniendo primeramente yerba y sobre ella coco rallado.</p>
-            <figcaption class="blockquote-footer">https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)#Mate_de_leche</figcaption>
-        </div>
-        <h4>El Tereré</h4>
-        <img class="rounded mx-auto d-block" src="../img/mate-terere.jpg" alt="mate terere imagen.">
-        <div class="text-center">
-            <p id="texto" class="lead"><br>El tereré (palabra de origen guaraní)79​ es una bebida tradicional, de amplio consumo en Paraguay y algunas provincias argentinas (las del nordeste y Entre Ríos)
-
-                Es tradicional de Paraguay donde es considerado un icono cultural y declarado como patrimonio cultural inmaterial de la humanidad por la Unesco.80​
-
-                Una forma de tereré, consistente en una mezcla de agua bien fría con yerba mate, remedios refrescantes naturales (hierbas medicinales) y hielo. Como hierbas suelen emplearse la menta (Mentha arvensis), la menta peperina, el cedrón (Aloysia triphylla), burrito, el kokú (Allophylus edulis), la cola de caballo o las cáscaras de limón.
-
-                La otra forma de tereré consiste en poner en un recipiente de metal tres dedos de altura de yerba mate y hielo. Preparar en una jarra o termo jugo de diversos sabores naranja, lima, limón con abundante hielo y cebarlo.
-
-                La yerba mate es puesta en maceración en agua fría y proporciona una bebida agradable por su efecto refrescante, especialmente en jornadas con altas temperaturas, evitando así los inconvenientes del mate hervido (cocido). Esta modalidad es también utilizada en la región pampeana de Argentina.</p>
-            <figcaption class="blockquote-footer">https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)#Terer%C3%A9</figcaption>
-        </div>
-
     </div>
     <footer class="text-center">
 

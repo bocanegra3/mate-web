@@ -3,11 +3,13 @@ body{
     padding-bottom: 5rem;
 }
 #tipografia{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela Round';
     font-size: 1.5rem;
     display:flexbox;
     margin: 0 10px;
+    color: rgba(255, 255, 255, 0.806);
     text-align: right;
+
 }
 #tipografia:hover{
     font-family: 'Varela Round', sans-serif;
@@ -15,7 +17,7 @@ body{
     display:flexbox;
     margin: 0 10px;
     text-align: right;
-    color: yellowgreen;
+    color: rgb(255, 255, 255);
 }
 .autor{
     text-align: right;
@@ -23,6 +25,9 @@ body{
 }
 
 div h4{
+    font-family: 'Oswald', sans-serif;
+}
+div h2{
     font-family: 'Oswald', sans-serif;
 }
 h6{
@@ -39,7 +44,21 @@ figcaption{
 #footer{
     text-align: center;
     position: absolute;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left:0px; /*A la derecha deje un espacio de 0px*/
+    right:0px; /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px; /*Abajo deje un espacio de 0px*/
+    height: 50px; /*alto del div*/
+    z-index:0;
+    
+    color: rgba(255, 255, 255, 0.746);
+    background: #218845;
+    
+}
+#footer:hover{
+    text-align: center;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left:0px; /*A la derecha deje un espacio de 0px*/
     right:0px; /*A la izquierda deje un espacio de 0px*/
     bottom: 0px; /*Abajo deje un espacio de 0px*/
@@ -47,20 +66,113 @@ figcaption{
     z-index:0;
     
     color: white;
-    background:rgb(14, 138, 82);
+    background: #218845;
     
 }
-#footer:hover{
+
+.main-content h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    background: #218845;
+  }
+   .gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Work Sans', sans-serif;
+  }
+  
+  .gallery li{
+  display: flex;/*para que la columna tenga la misma altura*/
+  box-sizing: border-box;
+  list-style: none;
+  width: calc(100% / 3);
+  padding: 10px;
+  }
+  
+  .gallery li .box{
+    padding: 4px 4px 20px 4px;
+    border: 2px solid #e1e8ee;
+  }
+  
+  .gallery li img{
+    width: 100%; /*imagenes responsivas*/
+    max-width: 100%;/*imagenes responsivas*/
+    height: auto;
+    margin-bottom: 6px;
+    justify-content: center;
+    overflow:hidden;
+  }
+  .gallery li img:hover{
+    width: 100%; /*imagenes responsivas*/
+    max-width: 100%;/*imagenes responsivas*/
+    height: auto;
+    margin-bottom: 6px;
+    justify-content: center;
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    transition:all .5s ease-in-out;
+    filter: saturate(110%);
+  }
+  
+  .gallery li h3{
+    margin-bottom: 6px;
     text-align: center;
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    left:0px; /*A la derecha deje un espacio de 0px*/
-    right:0px; /*A la izquierda deje un espacio de 0px*/
-    bottom: 0px; /*Abajo deje un espacio de 0px*/
-    height: 50px; /*alto del div*/
-    z-index:0;
-    
-    color: yellowgreen;
-    background:rgb(14, 138, 82);
-    
-}
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 100%;
+    text-transform: uppercase;
+    color:#17181a;
+    letter-spacing: 5px;
+  }
+  
+  .gallery li p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #35e035;
+  }
+  
+  .gallery li p sup{
+  font-size: 1rem;
+  }
+  
+  .gallery li time{
+    display: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #35e035;
+  }
+  .gallery li .button{
+    margin-top: 5px;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background: #21dc47;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "work sand", sans-serif;
+  }
+  .gallery li .button:hover{
+    margin-top: 5px;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background: #21dc47;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "work sand", sans-serif;
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(30, 204, 14);
+    transition: all 0.2s ease;
+  }
