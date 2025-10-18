@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand mate-web" id="tipografia" href="./index.php">
                     <img src="./img/1f9c9.png" alt="" width="30" height="24">
-                    MATEICO</a>
+                    MATE WEB</a>
             <a class="nav-link " href="./pestañas/mate.php">Mate </a>
             <a class="nav-link " href="./pestañas/origen.php"> Origen </a>
             <a class="nav-link " href="./pestañas/elaboracion.php"> Elaboracion </a>
