@@ -6,41 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATE WEB</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../img/1f9c9.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="head">
-        <nav class="navbar navbar-dark bg-success">
+
+    <div class="header ">
+        <nav class="navbar navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand " id="tipografia" href="../index.php">
+                <a class="navbar-brand mate-web" id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
                     MATE WEB</a>
+            <a class="nav-link " href="./mate.php">Mate </a>
+            <a class="nav-link " href="./origen.php"> Origen </a>
+            <a class="nav-link " href="./elaboracion.php"> Elaboracion </a>
+            <a class="nav-link " href="./ilustraciones_mate.php"> Ilustraciones</a>
+            <a class="nav-link " href="#"> Productos</a>
+            <a class="nav-link " href="./contacto.php"> Contacto</a>
             </div>
         </nav>
-        <nav class="nav nav-pills nav-fill">
-            <a class="nav-link link-success" href="./mate.php">Mate </a>
-            <a class="nav-link link-success" href="./origen.php"> Origen </a>
-            <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
-            <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
-            <a class="nav-link link-success" href="./productos.php"> Productos</a>
-            <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
-        </nav>
+
     </div>
     <div class="main-content">
-        <h2>Venta de productos</h2>
+        <h2 class="mate-web">Venta de productos</h2>
 <ul class="gallery">
 <?php
   include_once ("datos_productos.php");
@@ -55,23 +48,14 @@
   foreach($data as $row)
   {
     ?>
-    <li>
-        <div class="box">
-          <figure>
-            <img src="<?php echo $row['imagen']?>"/>
-            <figcaption>
-              <h3><?php echo $row['producto']?></h3>            
-              <p>
-                $<?php echo $row['precio']?>
-              </p>
-          
-            </figcaption>
-          </figure>
-          <button class="button" value="1">
-            Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
-          </button>
-        </div>
-      </li>
+<div class="card" style="width: 18rem;">
+  <img src="<?php echo $row['imagen']?>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $row['producto']?></h5>
+    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $<?php echo $row['precio']?></p>
+    <a href="#" class="btn btn-primary">Añade al carrito</a>
+  </div>
+</div>
       <?php
   }
   ?>

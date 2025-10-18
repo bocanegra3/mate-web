@@ -6,41 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATE WEB</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="../img/1f9c9.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="head">
-        <nav class="navbar navbar-dark bg-success">
+    <div class="header ">
+        <nav class="navbar navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" id="tipografia" href="../index.php">
+                <a class="navbar-brand mate-web" id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
                     MATE WEB</a>
+            <a class="nav-link " href="#">Mate </a>
+            <a class="nav-link " href="./origen.php">Origen</a>
+            <a class="nav-link " href="./elaboracion.php"> Elaboracion </a>
+            <a class="nav-link " href="./ilustraciones_mate.php"> Ilustraciones</a>
+            <a class="nav-link " href="./productos.php"> Productos</a>
+            <a class="nav-link " href="./contacto.php"> Contacto</a>
             </div>
         </nav>
-            <nav class="nav nav-pills nav-fill ">
-                <a class="nav-link link-success" href="./mate.php">Mate </a>
-                <a class="nav-link link-success" href="./origen.php"> Origen </a>
-                <a class="nav-link link-success" href="./elaboracion.php"> Elaboracion </a>
-                <a class="nav-link link-success" href="./ilustraciones_mate.php"> Ilustraciones</a>
-                <a class="nav-link link-success" href="./productos.php"> Productos</a>
-                <a class="nav-link link-success" href="./contacto.php"> Contacto</a>
-            </nav>
+
     </div>
     <section class="container-md text-center">
     <div><h2>tipos de mates</h4></div>     

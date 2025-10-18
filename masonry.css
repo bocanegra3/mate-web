@@ -1,0 +1,84 @@
+/* ===== Ilustraciones: Masonry Gallery (plug-in) ===== */
+
+/* Espaciado bajo navbar fija */
+body { scroll-behavior: smooth; }
+main { padding-top: 12px; padding-left: 10rem;}
+
+/* Título centrado como la captura */
+h1, .titulo-ilustraciones {
+  text-align: center;
+  color: #1a7b56;                /* verde mate */
+  font-weight: 700;
+  margin: 28px 0 10px;
+}
+
+/* Contenedor de la galería (usa el primero que exista) */
+#ilustraciones,
+.ilustraciones,
+.galeria,
+.gallery,
+.masonry {
+  /* Masonry con columnas */
+  column-width: 360px;           /* ancho objetivo por “bloque” */
+  column-gap: 24px;              /* separación entre columnas */
+  max-width: 1280px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+/* Cada item (img o figure) debe evitar partirse entre columnas */
+#ilustraciones > *,
+.ilustraciones > *,
+.galeria > *,
+.gallery > *,
+.masonry > * {
+  break-inside: avoid;
+  margin: 0 0 24px;              /* separación vertical entre items */
+  display: block;
+}
+
+/* Imágenes: bordes, sombra sutil y hover suave */
+#ilustraciones img,
+.ilustraciones img,
+.galeria img,
+.gallery img,
+.masonry img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: transform .18s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+#ilustraciones img:hover,
+.ilustraciones img:hover,
+.galeria img:hover,
+.gallery img:hover,
+.masonry img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0,0,0,.14);
+  filter: saturate(1.05);
+}
+
+/* Figcaption opcional: tipografía discreta */
+#ilustraciones figure figcaption,
+.ilustraciones figure figcaption,
+.galeria figure figcaption,
+.gallery figure figcaption,
+.masonry figure figcaption {
+  font-size: .92rem;
+  color: #57606a;
+  margin-top: 8px;
+}
+
+/* Responsive: ajusta el conteo de columnas */
+@media (max-width: 1280px){
+  #ilustraciones, .ilustraciones, .galeria, .gallery, .masonry { column-width: 320px; }
+}
+@media (max-width: 900px){
+  #ilustraciones, .ilustraciones, .galeria, .gallery, .masonry { column-width: 280px; column-gap: 20px; }
+}
+@media (max-width: 640px){
+  #ilustraciones, .ilustraciones, .galeria, .gallery, .masonry { column-width: 100%; column-gap: 0; padding: 0 16px; }
+  h1, .titulo-ilustraciones { margin: 22px 0 8px; }
+}
