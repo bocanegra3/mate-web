@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 16, 2023 at 03:17 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 18-10-2025 a las 19:53:18
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mate_web`
+-- Base de datos: `mate_web`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `consultas`
+-- Estructura de tabla para la tabla `consultas`
 --
 
 CREATE TABLE `consultas` (
@@ -38,7 +38,7 @@ CREATE TABLE `consultas` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `producto`
+-- Estructura de tabla para la tabla `producto`
 --
 
 CREATE TABLE `producto` (
@@ -50,42 +50,43 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `producto`
+-- Volcado de datos para la tabla `producto`
 --
 
 INSERT INTO `producto` (`id`, `producto`, `precio`, `imagen`, `fecha_inicial`) VALUES
-(13, 'Mate Metalico', 3800, '../img/mate-metalico.jpg', '0000-00-00'),
-(14, 'Mate Mundial', 2800, '../img/mate-mundia.jpg', '0000-00-00'),
-(15, 'Mate Redondo', 1600, '../img/mate-redondo.jpg', '0000-00-00');
+(13, 'Mate Metalico', 15020, '../img/mate-metalico.jpg', '0000-00-00'),
+(14, 'Mate Mundial', 28000, '../img/mate-mundia.jpg', '0000-00-00'),
+(15, 'Mate Redondo', 12500, '../img/mate-redondo.jpg', '0000-00-00'),
+(16, 'Mate Campeon 2022', 45900, '../img/mate-campeon-del-mundo.jpg', '0000-00-00');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `consultas`
+-- Indices de la tabla `consultas`
 --
 ALTER TABLE `consultas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `producto`
+-- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `consultas`
+-- AUTO_INCREMENT de la tabla `consultas`
 --
 ALTER TABLE `consultas`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `producto`
+-- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
