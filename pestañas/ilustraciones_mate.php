@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MATE WEB</title>
+  <title>MATEICO</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,7 +33,7 @@
       <div class="container-fluid">
         <a class="navbar-brand mate-web" id="tipografia" href="../index.php">
           <img src="../img/1f9c9.png" alt="logo mate" width="30" height="24">
-          MATE WEB
+          MATEICO
         </a>
         <a class="nav-link" href="./mate.php">Mate</a>
         <a class="nav-link" href="./origen.php">Origen</a>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATE WEB</title>
+    <title>MATEICO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="../img/1f9c9.png">
     <link rel="stylesheet" href="../style.css">
@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand mate-web" id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
-                    MATE WEB</a>
+                    MATEICO</a>
             <a class="nav-link " href="./mate.php">Mate </a>
             <a class="nav-link " href="./origen.php"> Origen </a>
             <a class="nav-link " href="./elaboracion.php"> Elaboracion </a>

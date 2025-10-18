@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATE WEB</title>
+    <title>MATEICO</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" id="tipografia" href="../index.php">
                     <img src="../img/1f9c9.png" alt="" width="30" height="24">
-                    MATE WEB</a>
+                    MATEICO</a>
             </div>
         </nav>
             <nav class="nav nav-pills nav-fill">
