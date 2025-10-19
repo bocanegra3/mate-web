@@ -33,7 +33,7 @@
     </div>
     <main class = "origen">
     <h3 class="autor mate-web" ;>El origen del Mate(infucion)</h3>
-    <div class="container-md">   
+    <div class="container-md cajaOrigen">   
             <p id="texto" class="lead">El mate es una infusión tradicional del sur de Sudamérica, hecha con hojas secas y molidas de la yerba mate (Ilex paraguariensis), originaria de las cuencas de los ríos Paraguay y Paraná. Tiene sabor amargo por los taninos, aunque algunas personas lo endulzan. La espuma que se forma al cebarlo proviene de los glucósidos de la yerba.
             Era consumido por pueblos guaraníes antes de la llegada de los españoles, quienes lo adoptaron y lo difundieron en Argentina, Paraguay, Uruguay, sur de Brasil, Chile y Bolivia. También es popular en Siria y Líbano.
             El mate contiene cafeína, por lo que es estimulante, además de tener efectos diuréticos, digestivos y antioxidantes. Se bebe caliente con una bombilla, en un recipiente llamado mate, cuia o porongo, que puede ser de calabaza, madera, metal o vidrio.</p>

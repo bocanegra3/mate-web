@@ -289,4 +289,9 @@ ul.gallery{
 @media (min-width: 1300px){
   .cebarMate{width: 40%;
             padding-left: 6rem;}
+
+}
+@media (max-width: 768px){    
+  div.container-md.cajaOrigen{display: flex;flex-wrap: wrap;justify-content: center;}
+  div.container-md.cajaPreparacion{display: block;}
 }

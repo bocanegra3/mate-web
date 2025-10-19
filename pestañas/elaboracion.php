@@ -31,14 +31,18 @@
 
     </div>
     <h3 class="autor mate-web" ;>Como preparar el Mate</h3>
-    <div class="container-md">
-
-        
+    <div class="container-md cajaPreparacion">        
         <img class="rounded mx-auto d-block cebarMate" src="../img/cebar-mate.jpeg" alt="CEBAR Mate.">
         <div class="text-center">
-            <p id="texto" class="lead">Para cebar un mate, se llena la calabaza con yerba hasta tres cuartos, se tapa, se agita boca abajo para que las partículas finas suban y no tapen la bombilla. Luego se añade un poco de agua tibia o fría, se deja absorber y se completa con agua caliente (70-90 °C), sin mojar la parte seca. Se inserta la bombilla tapando el extremo con el pulgar y presionando al fondo. La yerba debe quedar inclinada hacia el lado opuesto de la bombilla.
-
-En el Noreste argentino, Paraguay y sur de Brasil se toma frío, llamado tereré, con agua o jugos. El mate puede endulzarse mezclando azúcar o edulcorante en el agua o entre cebadas. Es una costumbre social: un cebador sirve y pasa el mate en ronda, compartiendo el mismo recipiente.<br>
+        <p id="texto" class="lead">Para cebar un mate, se llena la calabaza con yerba hasta tres cuartos,
+             se tapa, se agita boca abajo para que las partículas finas suban y no tapen la bombilla.
+              Luego se añade un poco de agua tibia o fría, se deja absorber y se completa con agua caliente
+               (70-90 °C), sin mojar la parte seca. Se inserta la bombilla tapando el extremo con el pulgar
+                y presionando al fondo. La yerba debe quedar inclinada hacia el lado opuesto de la bombilla.
+                En el Noreste argentino, Paraguay y sur de Brasil se toma frío, llamado tereré, con agua o jugos.
+                 El mate puede endulzarse mezclando azúcar o edulcorante en el agua o entre cebadas. Es una 
+                 costumbre social: un cebador sirve y pasa el mate en ronda, compartiendo el mismo recipiente.
+                 <br>
             </p>
             <figcaption class="blockquote-footer">https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)#Preparaci%C3%B3n</figcaption>
         </div>
