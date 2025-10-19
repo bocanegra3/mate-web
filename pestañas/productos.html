@@ -33,33 +33,40 @@
 
     </div>
     <div class="main-content">
-        <h2 class="">Venta de productos</h2>
+        <h2 class="productosTitulo mate-web">Venta de productos</h2>
 <ul class="gallery">
-<?php
-  include_once ("datos_productos.php");
-  include_once ("db.php");
-
-  $link= new db();
-  $sql= "SELECT producto, precio, imagen from producto order by precio ASC;";
-  $stmt = $link->prepare($sql);
-  $stmt->execute();
-  $data=$stmt->fetchAll();
-
-  foreach($data as $row)
-  {
-    ?>
 <div class="card" style="width: 18rem;">
-  <img src="<?php echo $row['imagen']?>" class="card-img-top" alt="...">
+  <img src="../img/mate-redondo.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $row['producto']?></h5>
-    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $<?php echo $row['precio']?></p>
+    <h5 class="card-title">Mate Raiz</h5>
+    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $12350</p>
     <a href="#" class="btn btn-primary">Añade al carrito</a>
   </div>
 </div>
-      <?php
-  }
-  ?>
-
+<div class="card" style="width: 18rem;">
+  <img src="../img/mate-campeon-del-mundo.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mate campeon Mundial 22</h5>
+    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $35000</p>
+    <a href="#" class="btn btn-primary">Añade al carrito</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="../img/mate-metalico.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mate Moderno</h5>
+    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $19550</p>
+    <a href="#" class="btn btn-primary">Añade al carrito</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="../img/mate-mundia.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mate Copa Mundial</h5>
+    <p class="card-text">Modelo nuevo, Oferta de temporada a tan solo $22450</p>
+    <a href="#" class="btn btn-primary">Añade al carrito</a>
+  </div>
+</div>
 </ul>
           
     </div>

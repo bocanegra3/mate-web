@@ -294,4 +294,6 @@ ul.gallery{
 @media (max-width: 768px){    
   div.container-md.cajaOrigen{display: flex;flex-wrap: wrap;justify-content: center;}
   div.container-md.cajaPreparacion{display: block;}
+  div.galeria{display:contents}
+  ul.gallery{display: initial;}
 }
