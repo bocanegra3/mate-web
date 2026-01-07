@@ -243,10 +243,10 @@ img{
 }
 /*personalizacion*/
 /*index*/
-main div{display: flex;}
+main div{display: flex; flex-direction: column;align-items: center;}
 h3.autor{text-align: center; padding: 1rem;}
 div.ImgDescription{display: flex; flex-direction: column; width: 50%; align-items: center;}
-.textJulio{width: 50%;display: flex;flex-direction: column;}
+.textJulio{display: flex;flex-direction: column;}
 .textJulio .blockquote-footer{position: relative;}
 /*mate*/
 .text-center #texto.lead{text-align: center;width: 100%;}
@@ -296,4 +296,10 @@ ul.gallery{
   div.container-md.cajaPreparacion{display: block;}
   div.galeria{display:contents}
   ul.gallery{display: initial;}
+}
+
+.nav-link{  font-family: "Yuji Boku", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;margin:2rem;
 }
