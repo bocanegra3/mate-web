@@ -250,6 +250,43 @@ div.ImgDescription{display: flex; flex-direction: column; width: 50%; align-item
 .textJulio .blockquote-footer{position: relative;}
 /*mate*/
 .text-center #texto.lead{text-align: center;width: 100%;}
+.titulomates h2{font-family: 'Courier New', Courier, monospace;}
+.MateTradicion{padding: 2rem;}
+.MateTradicion h2{text-align: center;padding: 2rem;}
+.MateTradicion p{width: 40rem; margin-left: 17rem ;text-align: center;}
+.MateTradicion img{   
+   top: 18rem;
+    position: absolute;
+    left: 69rem;
+    width: 25rem;}
+#MateAmargo{padding: 2rem;}
+#MateAmargo h3{text-align: center;padding: 2rem;}
+#MateAmargo p{width: 40rem; margin-left: 17rem ;text-align: center;}
+#MateAmargo img{top: 40rem;
+    position: absolute;
+    left: 69rem;
+    width: 25rem;}
+#MateDulce{padding: 2rem;}
+#MateDulce h3{text-align: center;padding: 2rem;}
+#MateDulce p{width: 40rem; margin-left: 17rem ;text-align: center;}
+#MateDeLeche{padding: 2rem;}
+#MateDulce img{top: 65rem;
+    position: absolute;
+    left: 69rem;
+    width: 25rem;}
+#MateDeLeche h3{text-align: center;padding: 2rem;}
+#MateDeLeche p{width: 40rem; margin-left: 17rem ;text-align: center;}
+#MateDeLeche img{top: 91rem;
+    position: absolute;
+    left: 69rem;
+    width: 25rem;}
+#MateTerere{padding: 2rem;}
+#MateTerere h3{text-align: center;padding: 2rem;}
+#MateTerere p{width: 40rem; margin-left: 17rem ;text-align: center;}
+#MateTerere img{top: 117rem;
+    position: absolute;
+    left: 69rem;
+    width: 25rem;}
 /*Origen*/
 .imgOrigen{ width: 50rem;}
 #texto{  display: flex; font-size: 1rem; width: 70%; text-align: center;}
